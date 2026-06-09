@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <meta name="robots" content="noindex,nofollow">
+</head>
+<body>
+  <p>Redirecting to mentor...</p>
+
+  <script>
+    const mentors = [
+      "https://t.me/Manager66Gaming",
+      "https://t.me/Annie66game",
+      "https://t.me/ranvithaa",
+      "https://t.me/kiyanikasharma",
+      "https://t.me/annis401",
+      "https://t.me/annis403",
+      "https://t.me/Manager66game",
+      "https://t.me/Mentor66game",
+      "https://t.me/managementsixsix",
+      "https://t.me/Janice7676",
+      "https://t.me/ritha66game",
+      "https://t.me/xuelian66game",
+      "https://t.me/smith66game",
+      "https://t.me/satii66game",
+      "https://t.me/prince66game1",
+      "https://t.me/mentor66game009"
+    ];
+
+    const storageKey = "fixedMentor66game";
+
+    let target = localStorage.getItem(storageKey);
+
+    if (!target || !mentors.includes(target)) {
+      const randomIndex = Math.floor(Math.random() * mentors.length);
+      target = mentors[randomIndex];
+      localStorage.setItem(storageKey, target);
+    }
+
+    setTimeout(() => {
+      window.location.href = target;
+    }, 300);
+  </script>
+</body>
+</html>
